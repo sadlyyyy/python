@@ -90,6 +90,14 @@ df['Cluster'] = kmeans.labels_ + 1  # Mulai dari 1
 st.write("**Distribusi Data per Cluster:**")
 st.dataframe(df['Cluster'].value_counts().rename_axis("Cluster").reset_index(name="Jumlah Data"))
 
+st.write("**Berdasarkan pemodelan KMeans Clustering ini didapatkan informasi bahwa**")
+
+st.markdown("""
+- **Cluster 1**: 1241 data
+- **Cluster 2**: 4559 data
+- **Cluster 3**: 3150 data
+""")
+
 # Langkah 5: Visualisasi Cluster (PCA)
 st.header("5. Visualisasi Cluster (PCA)")
 

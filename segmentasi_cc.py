@@ -14,7 +14,7 @@ st.title("📊 Segmentasi Pelanggan Menggunakan KMeans Clustering")
 
 # Langkah 1: Load Dataset
 st.header("1. Load Dataset")
-data_path = "/coding/CC GENERAL.csv"
+data_path = "/coding/Phyton/CC GENERAL.csv"
 df = pd.read_csv(data_path)
 st.write("**Dimensi Dataset:**", df.shape)
 st.dataframe(df.head())
